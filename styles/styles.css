@@ -202,11 +202,12 @@ a.showcase-button {
   grid-area: gMail;
 }
 
-.aboutUs {}
+.aboutUs {
+  grid-area: aboutUs;
+}
 
 .whatWeDo {
   grid-area: whatWeDo;
-
 }
 
 .FAQ {
