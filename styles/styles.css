@@ -158,93 +158,82 @@ a.showcase-button {
   margin-top: 10px;
 }
 
+/* Footer Logo */
+
 .footer {
   height: 500px;
-  background-color: #00252E;
   margin-top: -150px;
-  color: #fff;
+  background-color: var(--Dark-Cyan);
 }
 
-.footerContent {
-  font-family: 'Open Sans', sans-serif;
-  font-size: .8em;
-  padding: 150px 100px 0 100px;
+.footer-container {
+  padding: 150px;
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 20% auto auto auto auto auto;
-  grid-template-areas: " whiteLogo whiteLogo whiteLogo whiteLogo"
-    "mapIcon aboutUs career socialIcons"
-    "mapIcon whatWeDo blog ."
-    "phoneIcon FAQ contactUs ."
-    "gMail . . ."
-    ". . . copyright";
+  grid-template-rows: 40px auto auto;
+  width: 100%;
+  height: 100%;
 }
 
-/* Classes same as Grid Area layout names */
-
-.whiteLogo {
-  grid-area: whiteLogo;
+.footerLogo {
+  grid-column-start: 1;
+  grid-column-end: 5;
   width: 200px;
   margin-bottom: 20px;
   filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(227deg) brightness(106%) contrast(101%);
 }
 
-.mapIcon {
-  grid-area: mapIcon;
-}
-
-.phoneIcon {
-  grid-area: phoneIcon;
-}
-
-.gMail {
-  grid-area: gMail;
-}
-
-.aboutUs {
-  grid-area: aboutUs;
-}
-
-.whatWeDo {
-  grid-area: whatWeDo;
-}
-
-.FAQ {
-  grid-area: FAQ;
-}
-
-.career {
-  grid-area: career;
-}
-
-.blog {
-  grid-area: blog;
-}
-
-.contactUs {
-  grid-area: contactUs;
-}
-
-.socialIcons {
-  grid-area: socialIcons;
+.parent-div {
   text-align: center;
+  padding-top: 30px;
+}
+
+.child-div1 {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  font-size: .7em;
+  line-height: 1.9em;
+}
+
+.child-div1>i {
+  margin-right: 10px;
+}
+
+.child-div2 {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  font-size: .7em;
+  line-height: 3em;
+}
+
+.child-div3 {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  font-size: .7em;
+  line-height: 3em;
+}
+
+.child-div4 {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
   font-size: 1.2em;
+  line-height: 3em;
 }
 
-.fa-facebook {
-  grid-area: socialIcons;
-  margin-right: .4em;
+.child-div4>i {
+  margin-right: 10px;
 }
 
-.fa-instagram {
-  grid-area: socialIcons;
-  margin-right: .4em;
-}
-
-.fa-twitter {
-  grid-area: socialIcons;
-  margin-right: .4em;
+.copyright {
+  color: #fff;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  font-size: .5em;
+  text-align: right;
 }
 
 /* Media Screen */
