@@ -20,13 +20,7 @@ html {
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 100%;
-  height: 65%;
-  background: url(/images/bg-hero-desktop.svg);
-  background-color: #EDFBFE;
-  background-repeat: no-repeat;
-}
+
 
 /* Typography */
 
@@ -69,8 +63,15 @@ a.nav-button {
 }
 
 
-
 /* Showcase */
+
+.wrapper {
+  width: 100%;
+  height: 65%;
+  background: url(/images/bg-hero-desktop.svg);
+  background-color: #EDFBFE;
+  background-repeat: no-repeat;
+}
 
 .container {
   display: flex;
@@ -104,10 +105,150 @@ a.showcase-button {
   border-radius: 30px;
 }
 
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(170, 170, 170, 0.555);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 30px;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(170, 170, 170, 0.555);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 30px;
+}
+
+.section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(170, 170, 170, 0.555);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 30px;
+}
+
+/* Call To Action */
+
+.section5 {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(170, 170, 170, 0.555);
+}
+
+.callToAction {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.callToAction .showcase-button {
+  margin-top: 10px;
+}
+
+.footer {
+  height: 500px;
+  background-color: #00252E;
+  margin-top: -150px;
+  color: #fff;
+}
+
+.footerContent {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  padding: 150px 100px 0 100px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20% auto auto auto auto auto;
+  grid-template-areas: " whiteLogo whiteLogo whiteLogo whiteLogo"
+    "mapIcon aboutUs career socialIcons"
+    "mapIcon whatWeDo blog ."
+    "phoneIcon FAQ contactUs ."
+    "gMail . . ."
+    ". . . copyright";
+}
+
+/* Classes same as Grid Area layout names */
+
+.whiteLogo {
+  grid-area: whiteLogo;
+  width: 200px;
+  margin-bottom: 20px;
+  filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(227deg) brightness(106%) contrast(101%);
+}
+
+.mapIcon {
+  grid-area: mapIcon;
+}
+
+.phoneIcon {
+  grid-area: phoneIcon;
+}
+
+.gMail {
+  grid-area: gMail;
+}
+
+.aboutUs {}
+
+.whatWeDo {
+  grid-area: whatWeDo;
+
+}
+
+.FAQ {
+  grid-area: FAQ;
+}
+
+.career {
+  grid-area: career;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.contactUs {
+  grid-area: contactUs;
+}
+
+.socialIcons {
+  grid-area: socialIcons;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.fa-facebook {
+  grid-area: socialIcons;
+  margin-right: .4em;
+}
+
+.fa-instagram {
+  grid-area: socialIcons;
+  margin-right: .4em;
+}
+
+.fa-twitter {
+  grid-area: socialIcons;
+  margin-right: .4em;
+}
 
 /* Media Screen */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .nav {
     margin: 0 auto;
     display: flex;
@@ -166,4 +307,96 @@ a.showcase-button {
     justify-content: center;
     align-items: center;
   }
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .growTogetherText {
+    grid-row: 2/3;
+    color: #9CA0A3;
+  }
+
+  .growTogetherText>h1 {
+    color: var(--Dark-Cyan);
+  }
+
+  .growTogether {
+    grid-row: 1/2;
+  }
+
+  .growTogether>img {
+    width: 100%;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: #9CA0A3;
+  }
+
+  .section3 h1 {
+    color: var(--Dark-Cyan);
+    line-height: 1.3em;
+  }
+
+  .flowingConversationsImage>img {
+    width: 100%;
+  }
+
+  .section4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: #9CA0A3;
+  }
+
+  .section4 h1 {
+    color: var(--Dark-Cyan);
+  }
+
+  .yourUsers {
+    grid-row: 2/3;
+  }
+
+  .yourUsersImage>img {
+    width: 100%;
+    grid-row: 1/2;
+  }
+
+  .section5 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(170, 170, 170, 0.555);
+  }
+
+  .callToAction {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .callToAction>h1 {
+    font-size: 1em;
+  }
+
+  .callToAction .showcase-button {
+    background-color: var(--Pink);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
 }
